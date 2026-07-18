@@ -1,5 +1,5 @@
 {
-  "name": "@mienvio/sdk",
+  "name": "@neo-cheems/mienvio-sdk",
   "version": "0.1.0",
   "description": "TypeScript SDK for the Mienvío API v2 — ship packages across Mexico",
   "type": "module",
@@ -31,7 +31,7 @@
   },
   "keywords": [
     "mienvio",
-    "mienvio",
+    "neo-cheems",
     "shipping",
     "mexico",
     "parcel",
@@ -42,10 +42,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mienvio/mienvio-sdk"
+    "url": "https://github.com/tesuser4444/MiEnvioSDK"
   },
   "bugs": {
-    "url": "https://github.com/mienvio/mienvio-sdk/issues"
+    "url": "https://github.com/tesuser4444/MiEnvioSDK/issues"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.4",

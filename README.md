@@ -1,6 +1,6 @@
-# @mienvio/sdk
+# @neo-cheems/mienvio-sdk
 
-[![npm version](https://img.shields.io/npm/v/@mienvio/sdk)](https://www.npmjs.com/package/@mienvio/sdk)
+[![npm version](https://img.shields.io/npm/v/@neo-cheems/mienvio-sdk)](https://www.npmjs.com/package/@neo-cheems/mienvio-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **TypeScript SDK for the Mienvío API v2** — create, manage, and track shipments across Mexico's top parcel carriers.
@@ -16,22 +16,22 @@
 
 ```bash
 # npm
-npm install @mienvio/sdk
+npm install @neo-cheems/mienvio-sdk
 
 # bun
-bun add @mienvio/sdk
+bun add @neo-cheems/mienvio-sdk
 
 # yarn
-yarn add @mienvio/sdk
+yarn add @neo-cheems/mienvio-sdk
 
 # pnpm
-pnpm add @mienvio/sdk
+pnpm add @neo-cheems/mienvio-sdk
 ```
 
 ## Quick Start
 
 ```ts
-import { MienvioClient } from "@mienvio/sdk";
+import { MienvioClient } from "@neo-cheems/mienvio-sdk";
 
 // Initialize the client (sandbox mode for testing)
 const mienvio = new MienvioClient({
@@ -139,7 +139,7 @@ const res = await client.rates.getRates({
 ### Webhook utilities
 
 ```ts
-import { parseWebhookPayload, isWebhookPayload } from "@mienvio/sdk";
+import { parseWebhookPayload, isWebhookPayload } from "@neo-cheems/mienvio-sdk";
 
 // Express / Next.js webhook handler
 app.post("/webhooks/mienvio", (req, res) => {
@@ -158,7 +158,7 @@ app.post("/webhooks/mienvio", (req, res) => {
 All API errors throw a typed `MienvioError`:
 
 ```ts
-import { MienvioClient, MienvioError } from "@mienvio/sdk";
+import { MienvioClient, MienvioError } from "@neo-cheems/mienvio-sdk";
 
 try {
   await client.shipments.get(99999);
